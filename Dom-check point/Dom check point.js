@@ -32,8 +32,8 @@ function addToCart(item){
         else if (item==document.getElementById('dior_sport')){
             document.getElementById("in5").value="1"
         }
-        else if (item==document.getElementById('dolce_gabanna')){
-            document.getElementById("in5").value="1"
+        else if (item==document.getElementById('Dolce_Gabbana')){
+            document.getElementById("in6").value="1"
         }
         update(sum)
 }
