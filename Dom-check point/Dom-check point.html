@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1b5c00d7b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0d404976ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Dom-check point.css">
+    <script language="javascript"
+   src="Dom check point.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEFORA</title>
+    <link rel="shortcut icon" href="images/vaporisateur-de-parfum.svg" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>SEFO<span>RA!</span></h1>
+    </header>
+    <main>
+    <div class="background-img">
+        <img src="images/bgm.jpg" width="100%">
+    </div>
+<div class="produit">
+    <section class="cadre-cart">
+        <div class="items">
+            <img src="https://tn.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/01/0633/1.jpg?7604" width="200px" height="auto">
+            <h2>parfum smart</h2>
+            <h2>55.00 TND</h2>
+            <div class="buttons">
+                <button><i onclick="like(document.getElementById('heart1'))" id="heart1" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('smart'))"><i  class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="data:image/jpeg;base64,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" width="200px" height="auto">
+            <h2>blue de chanel</h2>
+            <h2>100.00 TND</h2>
+            <div class="buttons">
+                <button><i onclick="like(document.getElementById('heart2'))" id="heart2" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('bleu_chanel'))"><i class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwc80edcdc/images/hi-res/SKU/SKU_6/421404_swatch.jpg" width="200px" height="auto">
+            <h2>sauvage</h2>
+            <h2>250.00 TND</h2>
+            <div class="buttons">
+                <button><i onclick="like(document.getElementById('heart3'))" id="heart3" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('sauvage'))"><i class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://cdn2.tendance-parfums.com/media/catalog/product/cache/4aa19f79e4c8443f98fec02ca05a074b/b/o/boss-bottled-infinite-boite-et-flacon-du-parfum.jpg" width="200px" height="auto">
+            <h2>Hugo boss</h2>
+            <h2>300.00 TND</h2>
+            <div class="buttons">
+                <button><i onclick="like(document.getElementById('heart4'))" id="heart4" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('hugo_boss'))"><i class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd9342470/assets/Y0689227/Y0689227_F068955709_E01_GHC_fr_FR.jpg?sw=715&sh=773&sm=fit" width="200px" height="auto">
+            <h2>dior sport</h2>
+            <h2>200.00 TND</h2>
+            <div class="buttons">
+                <button><i onclick="like(document.getElementById('heart5'))" id="heart5" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('dior_sport'))"><i class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="https://i2.wp.com/trucsdemec.fr/wp-content/uploads/2020/09/Meilleurs-parfums-hommes-2021-trucsdemec.fr-blog-lifestyle-masculin-mode-beaute-16.jpg?resize=800%2C800&ssl=1" width="200px" height="auto">
+            <h2>Dolce & Gabbana</h2>
+            <h2>215.00 TND</h2>
+            <div class="buttons">
+                <button ><i onclick="like(document.getElementById('heart6'))" id="heart6" class="far fa-heart" style="font-size: 20px;"></i></i></button>
+                <button onclick="addToCart(document.getElementById('Dolce_Gabbana'))"><i class="fas fa-cart-plus" class="add-btn" style="font-size: 20px;"></i>ajouter au panier</button>
+            </div>
+        </div>
+        
+    </section>
+    <section class="shopping-cart">
+        <h2>cart</h2>
+        <table>
+            <tr>
+                <th>prodect</th>
+                <th>prodect's price</th>
+                <th>Quantité</th>
+                <th><i class="fas fa-minus-circle"></i></th>
+            </tr>
+            <tr id="smart" class="hiden">
+<td class="prodect">smart</td>
+<td class="prodect's price">55.00 TND</td>
+<td class="Quantité"><input onchange="update(sum)" type="number" min="1" max="10" value="0" id="in1" style="width: 50px;"></td>
+<td><i onclick="removecart(document.getElementById('smart'))" class="fas fa-minus-circle" class="fas fa-minus-circle"></i></td>
+            </tr>
+                <tr id="bleu_chanel" class="hiden">
+                    <td class="prodect">blue de chanel</td>
+                    <td class="prodect's price">100.00 TND</td>
+                    <td class="Quantité"><input type="number" min="1" max="10" value="0" id="in2" style="width: 50px;"></td>
+                    <td><i  onclick="removecart(document.getElementById('bleu_chanel'))" class="fas fa-minus-circle"></i></td>
+                </tr>
+            </tr>
+            <tr id="sauvage" class="hiden">
+                <td class="prodect">sauvage</td>
+                <td class="prodect's price">250.00 TND</td>
+                <td class="Quantité"><input type="number" min="1" max="10" value="0" id="in3" style="width: 50px;"></td>
+                <td><i  onclick="removecart(document.getElementById('sauvage'))" class="fas fa-minus-circle"></i></td>
+            </tr>
+            <tr id="hugo_boss" class="hiden">
+                <td class="prodect">Hugo boss</td>
+                <td class="prodect's price">300.00 TND</td>
+                <td class="Quantité"><input type="number" min="1" max="10" value="0" id="in4" style="width: 50px;"></td>
+                <td><i  onclick="removecart(document.getElementById('hugo_boss'))" class="fas fa-minus-circle"></i></td>
+            </tr>
+            <tr id="dior_sport" class="hiden">
+                <td class="prodect">dior sport</td>
+                <td class="prodect's price">200.00 TND</td>
+                <td class="Quantité"><input type="number" min="1" max="10" value="0" id="in5" style="width: 50px;"></td>
+                <td><i  onclick="removecart(document.getElementById('dior_sport'))" class="fas fa-minus-circle"></i></td>
+            </tr>
+            <tr id="Dolce_Gabbana" class="hiden">
+                <td class="prodect">Dolce & Gabbana</td>
+                <td class="prodect's price">215.00 TND</td>
+                <td class="Quantité"><input type="number" min="1" max="10" value="0" id="in6" style="width: 50px;"></td>
+                <td><i  onclick="removecart(document.getElementById('Dolce_Gabbana'))" class="fas fa-minus-circle"></i></td>
+            </tr>
+        </table>
+        <span class="total"><span>Total: </span><span id="Total">0</span><span> TND</span></span>
+        <br>
+        <span class="confirm">confirmation</span>
+    </section>
+</div>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
